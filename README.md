@@ -1,4 +1,6 @@
 # FE-Robert-Biernat
+# priv commands
+# cd e:\work\FE-Robert-Biernat
 
 This template should help get you started developing with Vue 3 in Vite.
 
