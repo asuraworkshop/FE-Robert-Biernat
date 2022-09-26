@@ -2,8 +2,17 @@
 
 #app {
   max-width: 1280px;
-  margin: 0 auto;
+  margin: 48px auto;
   font-weight: normal;
+  background-color: #000a;
+  border: 1px solid #939db8;
+  box-shadow: 0 0 2px #4444, 0 0 4px #4444, 0 0 6px #4444;
+  transition: all ease-in-out 250ms;
+}
+
+#app:hover {
+  border: 1px solid #16c7ff;
+  box-shadow: 0 0 2px #16c7ff44, 0 0 4px #16c7ff44, 0 0 6px #16c7ff44;
 }
 
 a {
@@ -12,23 +21,70 @@ a {
   transition: 0.4s;
 }
 
+h1 {
+  font-size: 24px;
+  padding: 12px;
+}
+
 @media (hover: hover) {
   a:hover {
     background-color: hsla(160, 100%, 37%, 0.2);
   }
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    grid-template-columns: 1fr 1fr;
-  }
+.planet-form {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 6px;
 }
 
-.planet-form {
+.planet-form_field {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 0 0 calc(100% / 3);
+  padding: 6px;
+}
 
+.planet-form_submit {
+  flex: 0 0 100%;
+  padding: 6px;
+}
+
+.planet-form_field {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 0 0 calc(100% / 3);
+  padding: 6px;
+}
+
+.planet-form input,
+.planet-form select,
+.planet-form button {
+  width: 100%;
+  background-color: var(--colorBg01);
+  color: var(--color03);
+  border: 1px solid var(--color02);
+  height: 100%;
+  padding: 6px 12px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.planet-form input:focus,
+.planet-form select:focus {
+  outline: 0;
+}
+
+.planet-form button {
+  cursor: pointer;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.planet-form button:hover {
+  background-color: var(--color02);
+  color: var(--color01);
 }
