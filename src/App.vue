@@ -1,7 +1,5 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import PlanetsTable from './components/PlanetsTable.vue'
-import PlanetsForm from './components/PlanetsForm.vue'
 </script>
 
 <template>
