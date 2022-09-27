@@ -9203,6 +9203,40 @@
       "habitability": true,
       "discovery_date": "2022-09-27",
       "id": 1034
+    },
+    {
+      "type": "Frozen",
+      "habitability": true,
+      "discovery_date": "2022-09-27",
+      "id": 1035
+    },
+    {
+      "type": "Volcanic",
+      "habitability": true,
+      "oxygen_percent": 50,
+      "discovery_date": "2022-09-09",
+      "id": 1036
+    },
+    {
+      "type": "Volcanic",
+      "habitability": true,
+      "oxygen_percent": 50,
+      "discovery_date": "2022-09-27",
+      "id": 1037
+    },
+    {
+      "type": "Volcanic",
+      "habitability": true,
+      "oxygen_percent": 50,
+      "discovery_date": "2022-09-27",
+      "id": 1038
+    },
+    {
+      "type": "Volcanic",
+      "habitability": true,
+      "oxygen_percent": 50,
+      "discovery_date": "2022-09-27",
+      "id": 1039
     }
   ]
 }

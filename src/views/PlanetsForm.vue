@@ -7,35 +7,68 @@ export default {
       name: '',
       habitability: true,
       oxygen_percent: 50,
-      type: 1,
+      type: 'Volcanic',
       allTypes: [
-      { text: 'Volcanic', value: 1 },
-      { text: 'Marsh', value: 2 },
-      { text: 'Irradiated', value: 3 },
-      { text: 'Toxic', value: 4 },
-      { text: 'Frozen', value: 5 },
-      { text: 'Scorched', value: 6 },
-      { text: 'Exotic', value: 7 },
-      { text: 'Wet', value: 8 },
+        { text: 'Volcanic', value: 'Volcanic' },
+        { text: 'Marsh', value: 'Marsh' },
+        { text: 'Irradiated', value: 'Irradiated' },
+        { text: 'Toxic', value: 'Toxic' },
+        { text: 'Frozen', value: 'Frozen' },
+        { text: 'Scorched', value: 'Scorched' },
+        { text: 'Exotic', value: 'Exotic' },
+        { text: 'Wet', value: 'Wet' },
       ],
+      typeNames: ['Volcanic', 'Marsh', 'Irradiated', 'Toxic', 'Frozen', 'Scorched', 'Exotic', 'Wet'],
       discovery_date: new Date().toISOString().split('T')[0],
-      distance: 1000,
+      distance: 10000,
       form_alert: '',
+      errors: []
     }
   },
   methods: {
     async addItem() {
       this.form_alert = '...';
-      const res = await axios.post(`http://localhost:3000/planets`, {
-        name: this.itemName,
-        type: this.type,
-        habitability: this.habitability,
-        oxygen_percent: this.oxygenPercent,
-        discovery_date: this.discovery_date,
-      });
-      this.form_alert = 'Planet Added';
-    },
-  },
+      this.errors = [];
+
+      if (!this.name) {
+        this.errors.push('Name required.');
+      }
+      if (this.name.length > 24 || this.name.length < 1) {
+        this.errors.push('Name length is min 1 and max 24.');
+      }
+
+      if (this.habitability != true && this.habitability != false) {
+        this.errors.push('Habitability incorrect value:' + this.habitability);
+      }
+
+      if (!Number.isInteger(this.oxygen_percent) || this.oxygen_percent < 0 || this.oxygen_percent > 100) {
+        this.errors.push('Oxygen percent incorrect value.');
+      }
+
+      if (!this.typeNames.includes(this.type)) {
+        this.errors.push('Planet type not recognized.');
+      }
+
+      if (!Number.isInteger(this.distance) || this.distance < 1000 || this.distance > 100000) {
+        this.errors.push('Oxygen percent incorrect value.');
+      }
+
+      if (isNaN(new Date(this.discovery_date))) {
+          this.errors.push('Date incorrect format.');
+      }
+
+      if (this.errors.length === 0) {
+        const res = await axios.post(`http://localhost:3000/planets`, {
+          name: this.itemName,
+          type: this.type,
+          habitability: this.habitability,
+          oxygen_percent: this.oxygen_percent,
+          discovery_date: this.discovery_date,
+        });
+        this.form_alert = 'Planet Added';
+      }
+    }
+  }
 };
 
 </script>
@@ -47,7 +80,7 @@ export default {
 
       <div class="planet-form_field">
         <label>Name:</label>
-        <input v-model="name" placeholder="Planet name" required>
+        <input v-model="name" placeholder="Planet name" type="text" maxlength="24" required>
       </div>
 
       <div class="planet-form_field">
@@ -58,9 +91,7 @@ export default {
 
       <div class="planet-form_field">
         <label>Habitability:</label>
-        <div>
-          <input type="checkbox" v-model="habitability" required>
-        </div>
+        <input type="checkbox" v-model="habitability">
       </div>
 
       <div class="planet-form_field">
@@ -87,6 +118,9 @@ export default {
         <label class="label">Add new planet:</label>
         <button>Add new planet</button>
         <span class="planet-form_alert">{{form_alert}}</span>
+        <ul>
+          <li v-for="error in errors">{{ error }}</li>
+        </ul>
       </div>
 
     </form>

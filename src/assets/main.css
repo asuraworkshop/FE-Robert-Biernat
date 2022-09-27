@@ -85,6 +85,12 @@ h1 {
   height: auto;
 }
 
+.planet-form input[type="checkbox"] {
+  width: 24px;
+  justify-self: center;
+  align-self: center;
+}
+
 .planet-form button:hover {
   background-color: var(--color02);
   color: var(--color01);
