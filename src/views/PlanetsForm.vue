@@ -50,7 +50,7 @@ export default {
       }
 
       if (!Number.isInteger(this.distance) || this.distance < 1000 || this.distance > 100000) {
-        this.errors.push('Oxygen percent incorrect value.');
+        this.errors.push('Distance incorrect value.');
       }
 
       if (isNaN(new Date(this.discovery_date))) {
