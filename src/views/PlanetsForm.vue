@@ -38,10 +38,10 @@ export default {
       }
 
       if (this.habitability != true && this.habitability != false) {
-        this.errors.push('Habitability incorrect value:' + this.habitability);
+        this.errors.push('Habitability incorrect value.');
       }
 
-      if (!Number.isInteger(this.oxygen_percent) || this.oxygen_percent < 0 || this.oxygen_percent > 100) {
+      if (!Number.isInteger(parseInt(this.oxygen_percent)) || this.oxygen_percent < 0 || this.oxygen_percent > 100) {
         this.errors.push('Oxygen percent incorrect value.');
       }
 

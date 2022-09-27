@@ -9237,6 +9237,55 @@
       "oxygen_percent": 50,
       "discovery_date": "2022-09-27",
       "id": 1039
+    },
+    {
+      "type": "Volcanic",
+      "habitability": true,
+      "oxygen_percent": 50,
+      "discovery_date": "2022-09-27",
+      "id": 1040
+    },
+    {
+      "type": "Volcanic",
+      "habitability": true,
+      "oxygen_percent": 50,
+      "discovery_date": "2022-09-27",
+      "id": 1041
+    },
+    {
+      "type": "Volcanic",
+      "habitability": true,
+      "oxygen_percent": 50,
+      "discovery_date": "2022-09-27",
+      "id": 1042
+    },
+    {
+      "type": "Volcanic",
+      "habitability": true,
+      "oxygen_percent": 50,
+      "discovery_date": "2022-09-27",
+      "id": 1043
+    },
+    {
+      "type": "Volcanic",
+      "habitability": true,
+      "oxygen_percent": 50,
+      "discovery_date": "2022-09-27",
+      "id": 1044
+    },
+    {
+      "type": "Volcanic",
+      "habitability": true,
+      "oxygen_percent": 50,
+      "discovery_date": "2022-09-27",
+      "id": 1045
+    },
+    {
+      "type": "Volcanic",
+      "habitability": true,
+      "oxygen_percent": "19",
+      "discovery_date": "2022-09-27",
+      "id": 1046
     }
   ]
 }

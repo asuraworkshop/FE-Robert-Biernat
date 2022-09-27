@@ -7,12 +7,6 @@
   background-color: #000a;
   border: 1px solid #939db8;
   box-shadow: 0 0 2px #4444, 0 0 4px #4444, 0 0 6px #4444;
-  transition: all ease-in-out 250ms;
-}
-
-#app:hover {
-  border: 1px solid #16c7ff;
-  box-shadow: 0 0 2px #16c7ff44, 0 0 4px #16c7ff44, 0 0 6px #16c7ff44;
 }
 
 a {
@@ -71,6 +65,7 @@ h1 {
   padding: 6px 12px;
   font-size: 15px;
   font-weight: 500;
+  transition: all ease-in-out 250ms;
 }
 
 .planet-form input:focus,
@@ -91,9 +86,13 @@ h1 {
   align-self: center;
 }
 
-.planet-form button:hover {
-  background-color: var(--color02);
-  color: var(--color01);
+.planet-form button:hover,
+.planet-form input[type="date"]:focus,
+.planet-form input[type="text"]:focus,
+.planet-form input[type="number"]:focus,
+.planet-form select:focus {
+  border: 1px solid #16c7ff;
+  box-shadow: 0 0 2px #16c7ff44, 0 0 4px #16c7ff44, 0 0 6px #16c7ff44;
 }
 
 .planet-form_alert {
