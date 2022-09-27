@@ -21,7 +21,7 @@ export default {
       typeNames: ['Volcanic', 'Marsh', 'Irradiated', 'Toxic', 'Frozen', 'Scorched', 'Exotic', 'Wet'],
       discovery_date: new Date().toISOString().split('T')[0],
       distance: 10000,
-      form_alert: '',
+      form_alert: 'Fill form...',
       errors: []
     }
   },
@@ -66,6 +66,12 @@ export default {
           discovery_date: this.discovery_date,
         });
         this.form_alert = 'Planet Added';
+        this.name = '';
+        this.habitability = true;
+        this.oxygen_percent = 50;
+        this.type = 'Volcanic';
+        this.discovery_date = new Date().toISOString().split('T')[0];
+        this.distance = 10000;
       }
     }
   }

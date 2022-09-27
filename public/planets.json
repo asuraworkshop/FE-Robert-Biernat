@@ -9286,6 +9286,111 @@
       "oxygen_percent": "19",
       "discovery_date": "2022-09-27",
       "id": 1046
+    },
+    {
+      "type": "Frozen",
+      "habitability": true,
+      "oxygen_percent": 50,
+      "discovery_date": "2022-09-27",
+      "id": 1047
+    },
+    {
+      "type": "Volcanic",
+      "habitability": true,
+      "oxygen_percent": 50,
+      "discovery_date": "2022-09-27",
+      "id": 1048
+    },
+    {
+      "type": "Volcanic",
+      "habitability": false,
+      "oxygen_percent": 50,
+      "discovery_date": "2022-09-27",
+      "id": 1049
+    },
+    {
+      "type": "Toxic",
+      "habitability": false,
+      "oxygen_percent": 50,
+      "discovery_date": "2022-09-27",
+      "id": 1050
+    },
+    {
+      "type": "Toxic",
+      "habitability": false,
+      "oxygen_percent": 50,
+      "discovery_date": "2022-09-27",
+      "id": 1051
+    },
+    {
+      "type": "Volcanic",
+      "habitability": true,
+      "oxygen_percent": 50,
+      "discovery_date": "2022-09-27",
+      "id": 1052
+    },
+    {
+      "type": "Volcanic",
+      "habitability": true,
+      "oxygen_percent": 50,
+      "discovery_date": "2022-09-27",
+      "id": 1053
+    },
+    {
+      "type": "Volcanic",
+      "habitability": true,
+      "oxygen_percent": 50,
+      "discovery_date": "2022-09-27",
+      "id": 1054
+    },
+    {
+      "type": "Volcanic",
+      "habitability": true,
+      "oxygen_percent": 50,
+      "discovery_date": "2022-09-27",
+      "id": 1055
+    },
+    {
+      "type": "Volcanic",
+      "habitability": true,
+      "oxygen_percent": 50,
+      "discovery_date": "2022-09-27",
+      "id": 1056
+    },
+    {
+      "type": "Volcanic",
+      "habitability": true,
+      "oxygen_percent": 50,
+      "discovery_date": "2022-09-27",
+      "id": 1057
+    },
+    {
+      "type": "Volcanic",
+      "habitability": true,
+      "oxygen_percent": 50,
+      "discovery_date": "2022-09-27",
+      "id": 1058
+    },
+    {
+      "type": "Volcanic",
+      "habitability": true,
+      "oxygen_percent": 50,
+      "discovery_date": "2022-09-27",
+      "id": 1059
+    },
+    {
+      "type": "Volcanic",
+      "habitability": true,
+      "oxygen_percent": 50,
+      "discovery_date": "2022-09-27",
+      "id": 1060
+    },
+    {
+      "type": "Volcanic",
+      "habitability": true,
+      "oxygen_percent": 50,
+      "discovery_date": "2022-09-27",
+      "id": 1061
     }
   ]
 }
