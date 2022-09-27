@@ -42,6 +42,9 @@ h1 {
 }
 
 .planet-form_submit {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
   flex: 0 0 100%;
   padding: 6px;
 }
