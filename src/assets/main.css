@@ -82,9 +82,18 @@ h1 {
   cursor: pointer;
   transition: 0.4s;
   cursor: pointer;
+  height: auto;
 }
 
 .planet-form button:hover {
   background-color: var(--color02);
   color: var(--color01);
+}
+
+.planet-form_alert {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #0a0;
+  margin-top: 12px;
 }
