@@ -105,3 +105,49 @@ h1 {
   color: #0a0;
   margin-top: 12px;
 }
+
+/* table */
+.planet-list {
+  width: calc(100% - 24px);
+  border-collapse: separate;
+  margin: 12px 12px;
+  border: 1px solid #444;
+  border-collapse: collapse;
+}
+
+.planet-list th,
+.planet-list td {
+  border: 1px solid #444;
+  padding: 4px 8px;
+}
+
+.planet-list th {
+  background-color: var(--colorBg01);
+  cursor: pointer;
+  user-select: none;
+  font-weight: 700;
+}
+
+.planet-list tr {
+  background-color: var(--color02);
+}
+
+.planet-list tr:nth-child(even) {
+  background-color: var(--color04);
+}
+
+.planet-list svg {
+  width: 24px;
+  height: 24px;
+  fill: #a00;
+  cursor: pointer;
+  margin: auto;
+}
+
+.planet-list td:last-child {
+  text-align: center;
+}
+
+.planet-list th:last-child {
+  cursor: default;
+}
