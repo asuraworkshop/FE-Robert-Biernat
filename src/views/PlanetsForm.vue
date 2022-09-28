@@ -62,6 +62,7 @@ export default {
           name: this.name,
           type: this.type,
           habitability: this.habitability,
+          distance: this.distance,
           oxygen_percent: this.oxygen_percent,
           discovery_date: this.discovery_date,
         });
@@ -112,7 +113,7 @@ export default {
       <div class="planet-form_field">
         <label class="label">Distance from Earth:</label>
         <input type="number" v-model="distance"
-         min="1000" max="100000" step="1000" required>
+         min="1000" max="100000" required>
       </div>
 
       <div class="planet-form_field">
