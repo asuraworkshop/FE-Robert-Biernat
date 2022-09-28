@@ -59,7 +59,7 @@ export default {
 
       if (this.errors.length === 0) {
         const res = await axios.post(`http://localhost:3000/planets`, {
-          name: this.itemName,
+          name: this.name,
           type: this.type,
           habitability: this.habitability,
           oxygen_percent: this.oxygen_percent,
